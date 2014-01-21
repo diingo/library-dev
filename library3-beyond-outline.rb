@@ -2,6 +2,7 @@ class Library
   def initialize(name)
     @books = []
     @name = name
+    @available = []
   end
 
   def books
@@ -22,11 +23,13 @@ class Library
 
   def add_book(book)
     @books.push(book)
+    @available.push(book)
     puts "Added the book, #{book.title}, to #{@name}'s list of books. The library's current book collection contains:  "
     p @books
   end
 
   def check_out(user, book)
+
   end
 
   def check_in(book)
